@@ -9,13 +9,13 @@ html,body{
 }
 
 .pimg1{
-    background-image: url('/Project_3//Images//image1.png');
+    background-image: url('./Images/image1.png');
     min-height: 100%;
 }.pimg2{
-    background-image: url('/Project_3//Images//image2.png');
+    background-image: url('./Images/image2.png');
     min-height: 100%;
 }.pimg3{
-    background-image: url('/Project_3//Images//image3.png');
+    background-image: url('./Images/image3.png');
     min-height: 100%;
 }
 
