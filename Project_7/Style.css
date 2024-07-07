@@ -147,3 +147,22 @@ main{
     font-size: 14px;
     gap: 10px;
 }
+
+/* ------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .search input {
+        min-width: 0; /* Adjusted minimum width for smaller screens */
+    }
+
+    .tags {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .card {
+        max-width: 100%; /* Ensure cards take full width on smaller screens */
+    }
+
+    .card img {
+        height: auto; /* Ensure images scale properly on smaller screens */
+    }
+}

@@ -74,4 +74,34 @@
   
   }
 
- 
+ /* ---------------------------------------------------------------- */
+
+ @media (max-width: 768px) {
+  .lg_text {
+      font-size: 48px;
+  }
+  .black_box h2 {
+      font-size: 48px;
+  }
+  .text_bold span {
+      font-size: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lg_text {
+      font-size: 36px;
+  }
+  .black_box h2 {
+      font-size: 36px;
+  }
+  .text_bold span {
+      font-size: 48px;
+  }
+  .text_container {
+      padding-top: 32px;
+  }
+  .card {
+      height: auto;
+  }
+}

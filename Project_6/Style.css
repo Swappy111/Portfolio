@@ -14,6 +14,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 100%;
+}
 
 body{
     font-family: "Roboto", sans-serif;  
@@ -34,6 +37,7 @@ header{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    /* padding: 0 20px; */
 }
 .logo{
     font-size: 32px;
@@ -84,19 +88,24 @@ nav ul li:hover{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 0 20px;
 }
 
 .hero-section h1{
-    font-size: 96px;
+    font-size: 8rem;
 }
 .hero-section h3{
-    font-size: 32px;
+    font-size: 2rem;
 }
+/* .hero-section p{
+    font-size: 2rem;
+} */
 
 
 /* Music - Section ===========================================================================*/
 
 .music-section{
+    padding: 0 20px ;
     padding-top: 50px;
     background-color: var(--purple500);
 }
@@ -137,6 +146,7 @@ button:hover{
 
 /* About-Music Section ===================================================*/
 .about-music{
+    padding: 0 20px;
     padding-top: 500px;
     display: grid;
     place-items: center;
@@ -153,6 +163,7 @@ button:hover{
     place-items: center;
     text-align: center;
     color: white;
+    padding: 0 20px;
 }
 .video-section .container{
     display: flex;
@@ -177,6 +188,7 @@ button:hover{
     margin: 100px 0;
     gap: 50px;
     scroll-margin: 120px;
+    padding: 0 20px;
 }
 .gift-content{
     display: flex;
@@ -210,9 +222,71 @@ button:hover{
     color: white;
 }
 
+.menu_bar {
+    display: none;
+}
 
-@media (max-width:786) {
+/* @media (max-width:786) {
     main{
         flex-direction: column;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .gift-card img{
+        width: 400px;
+    }
+    .ipad-iphone-img {
+        margin-top: -200px;
+        top: 200px;
+    }
+    .about-music{
+        padding-top: 300px;
+    }
+    .ipad-iphone-img img,
+    .mac-img img{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 70%;
+    }
+    nav ul{
+        display: none;
+    }
+
+    .menu_bar {
+        display: block;
+    }
+
+    .menu_bar i{
+        font-size: 24px;
+    }
+     .gift-section{
+        flex-direction: column;
+     }
+     .gift-section img{
+        width: 100%;
+     }
+    .footer-upper .container{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer-upper .footer-links{
+         min-width: 200px;
+    }
+
+    
+}
+
+@media (max-width: 425px) {
+    .ipad-iphone-img {
+        margin-top: -100px;
+        top: 100px;
+    }
+    .about-music{
+        padding-top: 15px;
     }
 }
