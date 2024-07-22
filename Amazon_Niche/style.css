@@ -11,6 +11,9 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    /* padding: 0 20px;
+    flex-wrap: wrap; */
 }
 
 .nav-logo{
@@ -57,6 +60,9 @@
     width: 620px;
     height: 40px;
     border-radius: 4px;
+
+    /* margin: 0 20px;
+    width: 100%; */
 }
 .nav-search:hover{
     border: 2px solid  rgb(255, 174, 0) ;
@@ -115,6 +121,9 @@ span{
     color: white;
     align-items: center;
     justify-content: space-evenly;
+
+    /* padding: 0 20px;
+    flex-wrap: wrap; */
 }
 
 .panel-ops p{
@@ -124,6 +133,10 @@ span{
 .panel-ops{
     width: 70%;
     font-size: 0.85rem;
+    /* 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; */
 }
 
 .panel-deals{
@@ -153,9 +166,11 @@ span{
     font-size: 0.85rem;
     width: 80%;
     margin-bottom: 25px;
+    
 }
 .hero-msg a{
     color: #007185;
+    text-decoration: none;
 }
 
 /* ============================================================================================= */
@@ -211,6 +226,9 @@ footer{
     height: 300px;
     display: flex;
     justify-content: space-evenly;
+
+    /* flex-wrap: wrap;
+    padding: 20px; */
 }
 ul{
     margin-top: 20px;
@@ -248,4 +266,61 @@ ul a{
 }
 .copyright{
     padding-top: 5px;
+}
+
+
+
+/* --------------------------------------------------Responsive------------------------------------------------------------------------------ */
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .shop-section .box {
+        width: 45%; /* Two boxes per row */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .shop-section .box {
+        width: 100%; /* Single box per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .panel {
+        padding: 5px;
+    }
+
+    .panel-ops {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero-msg {
+        width: 90%;
+        font-size: 0.75rem;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .hero-section{
+        height: 150px;
+    }
+
+    .foot-panel2 {
+        padding: 10px;
+    }
+    .foot-panel2 ul{
+        justify-content: center;
+        padding-left: 10px;
+    }
 }
