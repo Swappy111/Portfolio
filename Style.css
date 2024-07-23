@@ -239,12 +239,79 @@ footer{
     text-align: center;
 }
 
+/* -----------------------------------Menu Bar------------------------------------------ */
+
+.menuIconBar {
+    display: none;
+}
+.menuIconBar i{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.menuMobileItem{
+    background: var(--dark-color);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100vw);
+    transition: 0.3s ease-in;
+}
+.menuMobileItem ul{
+    margin-top: 250px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.menuMobileItem ul li{
+    padding: 10px 0;
+    transition: 0.3s ease-in;
+}
+.menuMobileItem ul li:hover{
+    background-color: var(--lighting-color);
+    color: var(--darker-color);
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+.CloseBtnContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.CloseBtnContainer button{
+    background-color: var(--lighting-color);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.CloseBtnContainer button:hover{
+    background-color: #025671;
+    color: #000;
+}
+
+.showMenu{
+    display: block;
+    transform: translateX(0);
+    transition: 0.2s ease-in;
+}
 /* Media-query-Responsive Portfolio */
 
 @media (max-width: 786px) {
     html{
         font-size: 40%;
     }
+     nav ul{
+        display: none;
+    }
+    .menuIconBar{
+        display: block;
+    }
+    .menuIconBar i{
+        font-size: 17px;
+    }
+
     #hero .container{
         flex-direction: column;
     }

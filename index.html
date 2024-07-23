@@ -10,17 +10,31 @@
      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+     <script src="index.js" defer></script>
+
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo">Portfolio</div>
+            <div class="menuIconBar" id="menuIcon"><i class="fa-solid fa-bars"></i></div>
             <ul>
                  <a href="#hero"><li>Home</li></a>
                  <a href="#projects"><li>Projects</li></a>
                  <a href="#contact"><li>Contact</li></a>
             </ul>
         </nav>
+
+        <div class="menuMobileItem">
+            <div class="CloseBtnContainer">
+                <button onclick="onClose()">Close</button>
+            </div>
+            <ul>
+                <a href="#hero" onclick="onClose()"><li>Home</li></a>
+                <a href="#projects" onclick="onClose()"><li>Projects</li></a>
+                <a href="#contact" onclick="onClose()"><li>Contact</li></a>
+           </ul>
+        </div>
     </header>
     <main>
         <section id="hero">
