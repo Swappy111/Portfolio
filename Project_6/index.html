@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo">MyTunes</div>
 
-            <div class="menu_bar"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu_bar" id="menuBar"><i class="fa-solid fa-bars"></i></div>
             <ul>
                 <a href="#hero"><li>Overview</li></a>
                 <a href="#music"><li>Music</li></a>
@@ -22,6 +24,18 @@
                 <a href="#gift"><li>Gift Cards</li></a>
             </ul>
         </nav>
+
+        <div class="menuMobile">
+            <div class="close_btn_container">
+                <button onclick="onClose()">Close</button>
+            </div>
+            <ul>
+                <a href="#hero" onclick="onClose()"><li>Overview</li></a>
+                <a href="#music" onclick="onClose()"><li>Music</li></a>
+                <a href="#video" onclick="onClose()"><li>Video</li></a>
+                <a href="#gift" onclick="onClose()"><li>Gift Cards</li></a>
+            </ul>
+        </div>
     </header>
 
 
